@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "mine";
+  src: url("../src/fonts/Minecraft.ttf") format("truetype");
+}
+@keyframes pulsa {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes inicio {
+  0% {
+    transform: translate(0px, 10px);
+    opacity: 0%;
+  }
+  50% {
+  transform: translate(0px, 10px);
+  opacity: 0%;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 100%;
+  }
+}
+@keyframes inicioo {
+  0% {
+    transform: translate(0px, 40px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 100%;
+  }
+}
+@keyframes opacidade {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+body {
+  background-image: linear-gradient(to bottom left, rgba(255,0,0,0.8), rgba(255,0,0,0));
+}
+.head {
+  font-size: 24px;
+  font-family: mine;
+  padding: 0px 0px 40px 0px;
+  color: #000;
+  animation-name: inicio;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  margin: 0px;
+}
+.img {
+  width: 35px;
+  height: 35px;
+  padding: 0px 0px 40px 0px;
+  animation-name: pulsa;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  
+}
+.inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.card {
+  padding: 20px 30px 0px 0px;
+  margin: 0px;
+  background-color: #9c40ed;
+  border-radius: 18px;
+  border: gray solid 3px;
+  animation: inicioo 2s ease-in;
+  box-shadow: 3px 6px 20px black;
+}
+.texto {
+  padding: 10px;
+  font-family: roboto;
+  color: black;
+}
+.cita {
+  padding: 10px;
+  font-family: roboto;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaço entre as linhas de imagens */
+}
+
+.metadinha1, 
+.metadinha2, 
+.metadinha3, 
+.metadinha4, 
+.metadinha5 {
+  display: flex;
+  gap: 10px; /* Espaço entre as imagens */
+}
+
+.galeria img {
+  max-width: 50%; /* Cada imagem ocupa metade do container */
+  height: auto; /* Mantém a proporção */
+  animation: opacidade 2s ease-in;
+}
+.galeria1 {
+  font-size: 30px;
+  font-family: mine;
+  animation: inicio 2s ease-in;
+  text-align: center;
+}
+.galeria2 {
+  font-size: 20px;
+  font-family: mine;
+  animation: inicio 3s ease-in;
+  text-align: center;
+}
+.randu-pics {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaço entre as linhas de imagens */
+  animation: opacidade 3s ease-in;
+}
+.clica {
+  text-align: center;
+  font-family: mine;
+}
